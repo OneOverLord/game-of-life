@@ -110,6 +110,7 @@
                 <version>2.8.2</version>
             </plugin>
 
+
             <plugin>
                 <groupId>com.jelastic</groupId>
                 <artifactId>jelastic-maven-plugin</artifactId>
@@ -125,7 +126,11 @@
 
         </plugins>
 
-        
+        <pluginManagement>
+            <plugins>
+
+            </plugins>
+        </pluginManagement>
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
@@ -136,9 +141,6 @@
     </build>
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <scope>test</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
